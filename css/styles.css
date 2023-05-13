@@ -38,8 +38,8 @@ ul {
 .container {
     /* Phone styles & > */
     min-width: 320px;
-    max-width: 395px;
-    padding: 0 16px;
+    max-width: 428px;
+    padding: 0 15px;
     margin: 0 auto;
 }
 
@@ -740,7 +740,7 @@ body {
 .list-clients {
     display: flex;
     flex-wrap: wrap;
-    gap: 72px 24px;
+    gap: 72px 16px;
     justify-content: center;
     /* margin: 0 auto;
      */
@@ -755,14 +755,14 @@ body {
 }
 
 @media only screen and (min-width: 1200px) {
-    .box-clients {
+    .list-clients {
 
         max-width: 1158px;
     }
 }
 
 .item-clients {
-    width: calc((100% - 24px) / 2);
+    width: calc((100% - 16px) / 2);
     height: 88px;
 }
 
@@ -794,13 +794,6 @@ body {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media only screen and (min-width: 768px) {
-    .link-clients {
-        width: 100%;
-        height: 100%;
-    }
-}
-
 .link-clients:hover,
 .link-clients:focus {
     border-color: var(--brand-color-buttonhover);
@@ -829,14 +822,9 @@ body {
     flex-direction: column;
     justify-content: center;
     gap: 72px;
-    max-width: 582px;
+
 }
 
-@media only screen and (min-width: 1200px) {
-    .footer-box {
-        max-width: 1158px;
-    }
-}
 
 @media only screen and (min-width: 768px) {
     .footer-box {
@@ -847,17 +835,16 @@ body {
         align-items: baseline;
         justify-content: flex-start;
         gap: 0;
+        max-width: 582px;
     }
 }
 
 @media only screen and (min-width: 1200px) {
     .footer-box {
-        display: flex;
-        flex-direction: row;
+
         flex-wrap: nowrap;
-        align-items: baseline;
-        justify-content: flex-start;
-        gap: 0;
+
+        max-width: 1158px;
     }
 }
 
@@ -886,6 +873,7 @@ body {
 
 .social-box-footer {
     margin-right: 0px;
+
 }
 
 @media only screen and (min-width: 1200px) {
@@ -1044,13 +1032,27 @@ body {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     padding: 8px 16px;
-    width: 398px;
+    width: 320px;
     height: 40px;
     font-size: 12px;
     line-height: 2;
     letter-spacing: 0.04em;
     color: var(--brand-color-white);
 
+}
+
+@media only screen and (min-width: 380px) {
+    .subscribe-input {
+
+        width: 360px;
+    }
+}
+
+@media only screen and (min-width: 400px) {
+    .subscribe-input {
+
+        width: 398px;
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -1265,7 +1267,7 @@ body {
 
 .backdrop-window {
     position: absolute;
-    width: 390px;
+    width: 330px;
     min-height: 584px;
     left: 50%;
     top: 50%;
@@ -1275,6 +1277,30 @@ body {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     padding: 72px 24px 24px 24px;
+}
+
+@media only screen and (min-width: 360px) {
+    .backdrop-window {
+        position: absolute;
+        max-width: 340px;
+        min-height: 584px;
+    }
+}
+
+@media only screen and (min-width: 392px) {
+    .backdrop-window {
+        position: absolute;
+        max-width: 360px;
+        min-height: 584px;
+    }
+}
+
+@media only screen and (min-width: 428px) {
+    .backdrop-window {
+        position: absolute;
+        max-width: 392px;
+        min-height: 584px;
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -1535,6 +1561,11 @@ body {
     border: none;
     border-radius: 50%;
     outline: none;
+
+}
+
+.menu-mob-btn {
+    fill: currentColor;
 }
 
 @media (min-width: 768px) {
@@ -1549,6 +1580,9 @@ body {
 }
 
 .menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
     position: fixed;
     top: 0;
     left: 0;
@@ -1560,6 +1594,10 @@ body {
 
     transform: translateX(100%);
     transition: transform 250ms ease-in-out;
+}
+
+.adress-mobile {
+    display: block;
 }
 
 .menu-container.is-open {
@@ -1607,9 +1645,9 @@ body {
     color: var(--brand-color-buttonhover);
 }
 
-.box-mobile-list {
+/* .box-mobile-list {
     margin-bottom: 284px;
-}
+} */
 
 .cross-mobile-icon {
     position: absolute;
@@ -1638,13 +1676,25 @@ body {
 
 .contacts-mobile-tel {
     font-weight: 700;
-    font-size: 36px;
+    font-size: 26px;
     line-height: 1.11;
 
     letter-spacing: 0.02em;
     text-transform: capitalize;
 
     color: var(--brand-color-iris);
+}
+
+@media only screen and (min-width: 392px) {
+    .contacts-mobile-tel {
+        font-size: 32px;
+    }
+}
+
+@media only screen and (min-width: 428px) {
+    .contacts-mobile-tel {
+        font-size: 36px;
+    }
 }
 
 .contacts-mobile-mail {
@@ -1663,7 +1713,7 @@ body {
 
 .social-mobile {
     display: flex;
-    gap: 56px;
+    justify-content: space-between;
     margin-top: 48px;
 
 }
