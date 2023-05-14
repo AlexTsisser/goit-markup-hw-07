@@ -748,7 +748,9 @@ body {
 
 }
 
-@media only screen and (max-width: 1199px) {
+
+
+@media only screen and (min-width: 768px) {
     .box-clients {
         max-width: 582px;
     }
@@ -1646,7 +1648,9 @@ body {
     color: var(--brand-color-buttonhover);
 }
 
-
+/* .box-mobile-list {
+    margin-bottom: 284px;
+} */
 
 .cross-mobile-icon {
     position: absolute;
