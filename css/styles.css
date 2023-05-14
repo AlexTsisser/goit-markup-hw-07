@@ -1546,6 +1546,9 @@ body {
     transition-duration: var(--time-transfor);
 }
 
+
+
+
 /* Styles mobile menu */
 .menu-toggle {
     min-height: 40px;
@@ -1617,9 +1620,7 @@ body {
     list-style: none;
 }
 
-/* .box-mobile-list {
-    margin-top: 70px;
-} */
+
 
 .mobile-menu {
     display: flex;
@@ -1645,9 +1646,7 @@ body {
     color: var(--brand-color-buttonhover);
 }
 
-/* .box-mobile-list {
-    margin-bottom: 284px;
-} */
+
 
 .cross-mobile-icon {
     position: absolute;
